@@ -1,5 +1,7 @@
 var controllerModule = angular.module('blank.controllers', []);
- 
+controllerModule.controller("catchCtrl", function($scope){
+		
+}) 
 controllerModule.controller("bottleCtrl", function($scope, $http, $ionicPopup){
 		$scope.bottle = {};
 		$scope.showAlert = function(title, text) {

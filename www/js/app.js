@@ -35,6 +35,11 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
       url: '/tabs',
       templateUrl: 'template/tabs.html',
       controller:'bottleCtrl' 
+    })
+    .state('catch', {
+      url: '/catch',
+      templateUrl: 'template/catch.html',
+      controller:'catchCtrl' 
     });
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/tabs');
