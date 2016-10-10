@@ -1,0 +1,33 @@
+<ion-view view-title="Bottles app">
+  <ion-content class="padding">
+  
+         <div class="row padding">
+            <button class="button button-positive button-center col col-50 col-offset-25" ng-click="bottleCatcher()">Catch the bottle</button>
+          </div>
+        </div>
+    
+         <div class="row padding">
+            <button class="button button-positive button-center col col-50 col-offset-25" ng-click="bottleStore()">Chuck up</button>
+          </div>
+        </div>
+
+         <div class="row padding">
+            <button class="button button-positive button-center col col-50 col-offset-25" ng-click="bottleUpdate()">Update first bottle</button>
+          </div>
+        </div>
+<div class="card">
+  <div class="item item-text-wrap">
+    {{bottle.id}}
+  </div>
+  <div class="item item-text-wrap">
+    {{bottle.nodes[0].author}}
+  </div>
+  <div class="item item-text-wrap">
+    {{bottle.nodes[0].title}}
+  </div>
+  <div class="item item-text-wrap">
+    {{bottle | json}}
+  </div>
+</div>
+  </ion-content>
+</ion-view>
